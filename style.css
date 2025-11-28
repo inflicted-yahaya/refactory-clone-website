@@ -1,0 +1,378 @@
+/* Styling for the whole body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* icons*/
+.icon {
+    height: 14px;
+    width: auto;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.inflictor-logo {
+    height: 40px;
+    width: 164px;
+}
+
+.inflictor-search-icon {
+    height: 20px;
+    width: auto;
+}
+
+.inflictor-social-icon, .inflictor-contact-icon {
+    height: 25px;
+    margin-right: 10px;
+}
+
+.inflictor-social-icons a {
+    margin-right: 10px;
+}
+
+
+/* Styling the heading*/
+.inflictor-section-title {
+    color: #6B2D8F;
+    font-size: 2.2em;
+    margin-bottom: 5px;
+}
+
+.inflictor-section-subtitle {
+    color: #00BFA5;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+/*Styling the buttons*/
+.inflictor-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.inflictor-btn-purple {
+    background-color: #6B2D8F;
+    color: #fff;
+    border: 2px solid #6B2D8F;
+}
+
+.inflictor-btn-yellow {
+    background-color: #C0FF33;
+    color: #6B2D8F;
+    border: 2px solid #C0FF33;
+}
+
+.inflictor-btn-white {
+    background-color: #fff;
+    color: #6B2D8F;
+    border: 2px solid #fff;
+}
+
+.inflictor-btn-arrow {
+    height: 16px;
+    margin-left: 10px;
+}
+
+.inflictor-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* Navigation bar in a flex box*/
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+}
+
+.inflictor-nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    flex-shrink: 1;
+}
+
+.inflictor-nav-links li a {
+    color: #333;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s;
+    white-space: nowrap;
+}
+
+.inflictor-nav-links li a:hover {
+    color: #6B2D8F;
+}
+
+.inflictor-nav-arrow {
+    height: 10px;
+    margin-left: 5px;
+}
+
+.inflictor-search-btn {
+    background-color: #C0FF33;
+    border: none;
+    border-radius: 5px;
+    padding: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inflictor-search-btn:hover {
+    background-color: #A9D132;
+}
+
+/*Hero Section*/
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/refactory-team.jpg') center/cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 5%;
+}
+
+.inflictor-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.inflictor-hero-content h1 {
+    font-size: 48px;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.inflictor-btn-group {
+    display: flex; /* FLEXBOX */
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/*About Refactory Section in CSS Grid*/
+
+#about {
+    background-color: #f5f5f5; /* Gray Background */
+    padding: 80px 5%;
+    
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.inflictor-about-content p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.inflictor-section-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/*Courses in a CSS Grid*/
+
+#courses {
+    text-align: center;
+}
+
+.inflictor-courses-header {
+    margin-bottom: 40px;
+}
+
+.inflictor-courses-grid {
+    display: grid; /* CSS GRID */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.inflictor-course-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow:	0	2px	8px	rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.inflictor-course-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.inflictor-card-content {
+    padding: 20px;
+}
+
+.inflictor-course-card h3 {
+    color: #6B2D8F;
+    margin-bottom: 10px;
+}
+
+.inflictor-course-card p {
+    margin-bottom: 15px;
+    font-size: 0.95em;
+}
+
+.inflictor-btn-small {
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+/*Footer Section in a CSS Grid*/
+
+footer {
+    background-color: #2C1A4D; /* Purple Footer Background*/
+    color: #fff;
+    padding: 60px 5% 20px;
+}
+
+.inflictor-footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 40px;
+}
+
+.inflictor-footer-col h5 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #00BFA5;
+}
+
+.inflictor-footer-col p {
+    margin-bottom: 15px;
+    font-size: 0.95em;
+}
+
+.inflictor-footer-col ul {
+    list-style: none;
+}
+
+.inflictor-footer-col li {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    display: flex;
+    align-items: center;
+}
+
+.inflictor-footer-col a:hover {
+    color: #C0FF33;
+}
+
+.inflictor-copyright {
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 20px;
+}
+
+
+/*Responsive design, generated with AI because I dont know*/
+
+@media (max-width: 768px) {
+    
+    /* --- NAVIGATION BAR --- */
+    .inflictor-nav-links {
+        display: none;
+    }
+
+    #navbar {
+        padding: 15px 4%;
+    }
+
+    /* --- HERO SECTION --- */
+    #hero h1 {
+        font-size: 2em;
+    }
+    
+    #hero h3 {
+        font-size: 1.2em;
+    }
+
+    .inflictor-btn-group {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .inflictor-btn {
+        width: 80%;
+        justify-content: center;
+    }
+
+
+    /* --- ABOUT SECTION (GRID) --- */
+    #about {
+        grid-template-columns: 1fr; /* Collapse to 1 column */
+        padding: 40px 4%;
+    }
+    
+    .inflictor-about-image-area {
+        order: -1;
+    }
+
+
+    /* --- COURSES SECTION (GRID) --- */
+    .inflictor-courses-grid {
+        grid-template-columns: 1fr; /* Collapse to 1 column */
+    }
+    
+
+    /* --- FOOTER SECTION (GRID) --- */
+    .inflictor-footer-grid {
+        grid-template-columns: 1fr; /* Collapse to 1 column for mobile */
+        gap: 30px;
+    }
+
+}
